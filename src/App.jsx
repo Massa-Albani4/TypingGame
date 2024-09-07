@@ -1,7 +1,13 @@
+import { useState } from "react";
+import TypingTest from "./components/TypingTest";
 import "./App.css";
 
 function App() {
-  return <div></div>;
+  return (
+    <div className="App">
+      <TypingTest />
+    </div>
+  );
 }
 
 export default App;

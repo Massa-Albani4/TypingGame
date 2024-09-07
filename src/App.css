@@ -1,8 +1,12 @@
-body {
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+}
+
+.App {
   box-sizing: border-box;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,10 +15,43 @@ body {
 }
 
 .container {
-  margin: 5px;
-  padding: 30px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ced4da;
+  max-width: 45%;
   background: #fff;
+  padding: 1.875rem;
+  border-radius: 0.625rem;
+  border: 1px solid #ced4da;
+}
+
+.test {
+  user-select: none;
+  font-size: 1.5rem;
+  line-height: 2.45rem;
+  user-select: none;
+  cursor: text;
+  margin-bottom: 1.5rem;
+}
+
+.result {
+  display: flex;
+  font-size: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.563rem;
+  border-top: 2px solid rgb(106, 106, 104);
+}
+
+.resetBtn {
+  padding: 0.55rem;
+  outline: none;
+  transition: all 0.5s;
+  background-color: #049c13;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.resetBtn:hover {
+  background-color: #02500b;
 }
