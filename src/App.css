@@ -15,20 +15,28 @@
 }
 
 .container {
-  max-width: 45%;
+  width: 50%;
+  max-width: 41.844rem;
   background: #fff;
   padding: 1.875rem;
   border-radius: 0.625rem;
   border: 1px solid #ced4da;
 }
 
-.test {
+.text {
+  margin-left: 0.6rem;
   user-select: none;
   font-size: 1.5rem;
   line-height: 2.45rem;
   user-select: none;
   cursor: text;
   margin-bottom: 1.5rem;
+}
+
+.inputField {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
 }
 
 .result {
