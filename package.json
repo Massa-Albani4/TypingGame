@@ -1,9 +1,9 @@
 {
-  "name": "vite-project",
+  "homepage": "https://massa-albani4.github.io/TypingGame/",
+  "name": "typing-game",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://massa-albani4.github.io/TypingGame",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
