@@ -12,23 +12,30 @@ const paragraph = `A plant is one of the most important living things that
         leaves, flowers, fruits, and seeds.
         `;
 
+/**
+ * A React functional component that simulates a typing test.
+ * It displays a paragraph for the user to type and calculates their typing speed in words per minute (WPM) and characters per minute (CPM).
+ */
+
 function TypingTest() {
   const maxTime = 60;
   const [timeLeft, setTimeLeft] = useState(maxTime);
   const [isTyping, setIsTyping] = useState(false);
   const [mistakes, setMistakes] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0); // Index of the current character being typed
   const [WPM, setWPM] = useState(0);
   const [CPM, setCPM] = useState(0);
   const inputRef = useRef(null);
-  const charRefs = useRef([]);
-  const [correctWrong, setCorrectWrong] = useState([]);
+  const charRefs = useRef([]); // References to each character span element
+  const [correctWrong, setCorrectWrong] = useState([]); // Array to store the correctness of each character
 
+  // Effect hook to focus the input field when the component mounts
   useEffect(() => {
     inputRef.current.focus();
     setCorrectWrong(Array(charRefs.current.length).fill(""));
   }, []);
 
+  // Effect hook to update the time left, WPM, and CPM every second
   useEffect(() => {
     let interval;
     if (isTyping && timeLeft > 0) {
@@ -58,13 +65,14 @@ function TypingTest() {
     setIsTyping(false);
     setTimeLeft(maxTime);
     setCharIndex(0);
-    setMistakes(0)
-    setCPM(0)
-    setWPM(0)
-    setCorrectWrong(Array(charRefs.current.length).fill(''))
+    setMistakes(0);
+    setCPM(0);
+    setWPM(0);
+    setCorrectWrong(Array(charRefs.current.length).fill(""));
     inputRef.current.focus();
   }
 
+  // Function to handle user input
   function handleChange(e) {
     const characters = charRefs.current;
     let currentChar = charRefs.current[charIndex];
@@ -113,7 +121,9 @@ function TypingTest() {
         <p>Mistakes: {mistakes}</p>
         <p>WPM: {WPM}</p>
         <p>CPM: {CPM}</p>
-        <button className="resetBtn" onClick={resetGame}>Try Again</button>
+        <button className="resetBtn" onClick={resetGame}>
+          Try Again
+        </button>
       </div>
     </div>
   );
