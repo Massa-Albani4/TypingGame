@@ -1,13 +1,14 @@
 {
-  "homepage": "https://massa-albani4.github.io/TypingGame/",
+  "homepage": "https://Massa-Albani4.github.io/TypingGame/",
   "name": "typing-game",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
-    "deploy": "npm run build && gh-pages -d docs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
