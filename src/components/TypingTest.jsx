@@ -2,15 +2,7 @@ import React from "react";
 import { useState, useRef, useEffect } from "react";
 import "/src/App.css";
 
-const paragraph = `A plant is one of the most important living things that 
-        develop on the earth and is made up of stems, leaves, 
-        roots, and so on.Parts of Plants: The part of the plant
-        that developed beneath the soil is referred to as root 
-        and the part that grows outside of the soil is known as shoot.
-        The shoot consists of stems, branches, leaves, fruits, 
-        and flowers.Plants are made up of six main parts: roots, stems,
-        leaves, flowers, fruits, and seeds.
-        `;
+const paragraph = `A plant is one of the most important living things that develop on the earth and is made up of stems, leaves, roots, and so on. Parts of Plants: The part of the plant that developed beneath the soil is referred to as root and the part that grows outside of the soil is known as shoot.The shoot consists of stems, branches, leaves, fruits, and flowers.Plants are made up of six main parts: roots, stems,leaves, flowers, fruits, and seeds.`;
 
 /**
  * A React functional component that simulates a typing test.
@@ -118,7 +110,7 @@ function TypingTest() {
         ))}
       </div>
       <div className="result">
-        <p>Time Left: {timeLeft}</p>
+        <p className="timeText">Time Left: {timeLeft}</p>
         <p>Mistakes: {mistakes}</p>
         <p>WPM: {WPM}</p>
         <p>CPM: {CPM}</p>
