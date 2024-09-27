@@ -111,6 +111,7 @@ function TypingTest() {
           <span
             className={`char ${index === charIndex ? " active" : ""} ${correctWrong[index]}`}
             ref={(e) => (charRefs.current[index] = e)}
+            key={index}
           >
             {char}
           </span>
