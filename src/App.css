@@ -10,28 +10,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Noto Sans Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   background-color: #e7e9e9;
 }
 
 .container {
-  width: 50%;
+  width: 40%;
   max-width: 39rem;
   background: #fff;
-  padding: 1.3rem 1.3rem 1.1rem 1.3rem;
+  padding: 0.9rem 1.4rem 0.8rem 1.4rem;
   border-radius: 0.625rem;
   border: 1px solid #ced4da;
 }
 
 .text {
-  margin-left: 0.6rem;
   user-select: none;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 2.3rem;
+  font-size: 1.13rem;
+  line-height: 1.9rem;
   user-select: none;
   cursor: text;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .inputField {
@@ -55,28 +53,29 @@ span.correct {
 
 .result {
   display: flex;
-  font-size: 1.13rem;
+  font-size: 0.85rem;
   align-items: center;
-  padding-top: 1rem;
+  justify-content: center;
+  padding-top: 0.7rem;
   border-top: 2px solid rgb(106, 106, 104);
 }
 
 .result p {
-  margin-right: 2.5rem;
+  padding-right: 2.1rem;
 }
 
 .timeText {
-  margin-left: 0.4rem;
+  margin-left: 0.3rem;
 }
 
 .resetBtn {
-  padding: 0.55rem;
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
   outline: none;
   transition: all 0.5s;
-  background-color: #049c13;
+  background-color: #26c536;
   color: #fff;
   border: none;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   cursor: pointer;
   border-radius: 0.25rem;
 }
